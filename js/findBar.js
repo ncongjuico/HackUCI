@@ -4,6 +4,7 @@
 
       var map;
 
+      //Initiate the Map
       function initMap() {
         var pyrmont = {lat: 34.0522, lng: -118.2437};
 
@@ -13,13 +14,36 @@
         });
 
         var service = new google.maps.places.PlacesService(map);
+
         service.nearbySearch({
           location: pyrmont,
           radius: 5000,
           type: ['bar']
-        }, processResults);
+        }, processResults, callback);
       }
 
+      function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            createMarker(results[i]);
+          }
+        }
+      }
+
+      function createMarker(place) {
+        var placeLoc = place.geometry.location;
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
+      }
+
+      //Process the result 
       function processResults(results, status, pagination) {
         if (status !== google.maps.places.PlacesServiceStatus.OK) {
           return;
