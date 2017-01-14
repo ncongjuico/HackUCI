@@ -24,6 +24,7 @@
           radius: 8000,
           types: ['bar']
         };
+        infowindow = new google.maps.InfoWindow();
 
         //search for bars
         var service = new google.maps.places.PlacesService(map);
@@ -46,6 +47,12 @@
         var marker = new google.maps.Marker({
           map: map,
           position: place.geometry.location
+        });
+
+        //listener to display infowindow when you click on marker
+        google.maps.event.addListener(marker, 'click', function(){
+          infowindow.setContent(place.name);
+          infowindow.open(map,this);
         });
       }
 
