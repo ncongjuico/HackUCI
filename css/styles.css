@@ -1,0 +1,28 @@
+/*************
+Body STYLING
+*************/
+body{
+  color: gray;
+  background-color: #F1EDEE;
+}
+
+/****************
+Mainpage STYLING
+****************/
+.mainpage{
+  text-align: center;
+}
+
+.mainpage img{
+  position: absolute;
+  top: 10%;
+  height: 100px;
+  width: 100px;
+}
+
+.mainpage button{
+  position: relative;
+  left: 40px;
+  top: 150px;
+  margin-bottom: 20px;
+}
