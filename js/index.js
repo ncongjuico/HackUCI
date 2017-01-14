@@ -1,11 +1,16 @@
 document.getElementById("findBar").onclick = function(){
-              location.href ="findBar.html";
-          };
+  location.href ="findBar.html";
+};
 
-document.getElementById("markIncident").onclick = function(){
-              location.href ="markIncident.html";
-          };
+function locationAlert(){
+  if(confirm("We need to access your location.\nGrant us permission to access your location?") == true)
+  {
+      location.href ="findBar.html"; //change this
+  }else{
+      location.href ="findBar.html"; //change this
+  }
+}
 
 document.getElementById("setting").onclick = function(){
-              location.href ="setting.html";
-          };
+  location.href ="setting.html";
+};
