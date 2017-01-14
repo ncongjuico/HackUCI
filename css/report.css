@@ -1,0 +1,23 @@
+/*************
+Body STYLING
+*************/
+body{
+  color: gray;
+  background-color: #F1EDEE;
+}
+
+/****************
+Mainpage STYLING
+****************/
+.assaultTypes{
+  text-align: center;
+}
+
+.assaultTypes button{
+  font-size: 40px;
+  top: 150px;
+  margin-right: 20px;
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+}
