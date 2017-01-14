@@ -18,7 +18,37 @@
           center: center,
           zoom: 13
         });
+
+        var request = {
+          location: center,
+          radius: 8000,
+          types: ['bar']
+        };
+
+        //search for bars
+        var service = new google.maps.places.PlacesService(map);
+        service.nearbySearch(request, callback);
       }
+
+      //making sure we have results and no error connecting to google's servers
+      function callback(results, status){
+        if(status == google.maps.places.PlacesServiceStatus.OK){
+          //adds markers on map
+          for(var i = 0; i < results.length; i++){
+            createMarker(results[i]);
+          }
+        }
+      }
+
+      //places markers on map based on results array
+      function createMarker(place){
+        var placeLoc = place.geometry.location;
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+      }
+
       google.maps.event.addDomListener(window, 'load', init);
       </script>
 
