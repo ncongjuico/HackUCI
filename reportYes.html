@@ -6,16 +6,16 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="./css/report.css" type="text/css" />
     <link rel="stylesheet" href="./css/reportYes.css" type="text/css" />
-    <!--<script src="js/findBar.js"></script>-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD97mFaVfbUI2BHA1Chiyx-ExuYjRIipzU"></script>
+    <script src="jquery-3.1.1.min.js"></script>
     <script src="js/reportYes.js"></script>
-    <style>
-    html, body, #map {
-      height: 100%;
-      margin: 0px;
-      padding 0px;
-    }
-    </style>
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
 
   <body>
@@ -24,29 +24,29 @@
       <p>Bars near you</p>
       <table class="table" align="center" border="black">
         <tr>
-          <td><a href="#assaultTypes">The Parlor</a></td>
-          <td><a href="#assaultTypes">Next Door Lounge</a></td>
-          <td><a href="#assaultTypes">The Hotel Cafe</a></td>
+          <td>The Parlor</td>
+          <td>Next Door Lounge</td>
+          <td>The Hotel Cafe</td>
         </tr>
         <tr>
-          <td><a href="#assaultTypes">The Hideout</a></td>
-          <td><a href="#assaultTypes">The Abbey</a></td>
-          <td><a href="#assaultTypes">The Boulivard Lounge</a></td>
+          <td>The Hideout</td>
+          <td>The Abbey</td>
+          <td>The Boulivard Lounge</td>
         </tr>
         <tr>
-          <td><a href="#assaultTypes">Mariposa</a></td>
-          <td><a href="#assaultTypes">Max Karaoke Studio</a></td>
-          <td><a href="#assaultTypes">Bascaro LA</a></td>
+          <td>Mariposa</td>
+          <td>Max Karaoke Studio</td>
+          <td>Bascaro LA</td>
         </tr>
         <tr>
-          <td><a href="#assaultTypes">BonaVista Lounge</a></td>
-          <td><a href="#assaultTypes">The Edison</a></td>
-          <td><a href="#assaultTypes">bluewhale</a></td>
+          <td>BonaVista Lounge</td>
+          <td>The Edison</td>
+          <td>bluewhale</td>
         </tr>
         <tr>
-          <td><a href="#assaultTypes">Villains Tavern</a></td>
-          <td><a href="#assaultTypes">The Taproom</a></td>
-          <td><a href="#assaultTypes">Champions Sportsbar Inc</a></td>
+          <td>Villains Tavern</td>
+          <td>The Taproom</td>
+          <td>Champions Sportsbar Inc</td>
         </tr>
       </table>
     </div>
@@ -57,16 +57,5 @@
       <button>Physical</br>Assault</button>
       <button>Stalked</button>
     </div>
-
-    <!--
-    <div class="nearBar">
-      <h2>Results</h2>
-      <ul id="places"></ul>
-      <button id="more">More results</button>
-    </div>
-
-    <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD97mFaVfbUI2BHA1Chiyx-ExuYjRIipzU&libraries=places&callback=initMap" async defer></script>
-    -->
   </body>
 </html>
