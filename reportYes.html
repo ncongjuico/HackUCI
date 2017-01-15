@@ -3,42 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="./css/report.css" type="text/css" />
+    <link rel="stylesheet" href="./css/reportYes.css" type="text/css" />
+    <script src="js/findBar.js"></script>
+
   </head>
 
   <body>
-    <div class="box container">
-      <div class="row">
-        <button class="quarter-circle top-left col-xs-6" id="tl"></button>
-        <button class="quarter-circle top-right col-xs-6" id="tr"></button>
-      </div>
-      
-      <div class="panel">
-        <div class='button-box'>
-          <div class='button-display' id="lengthCount">--</div>
-          <p class='button-label'>Count</p>
-        </div>
-        <div class='button-box'>
-          <div class="btn-default btn-circle button-display"><i id='start' class="glyphicon glyphicon-play" style="margin: auto">&nbsp;</i></div>
-          <p class='button-label'>Start</p>
-        </div>
-        <div class='button-box'>
-          <button id="strict" class='btn-default btn-circle button-display glyphicon'><i class='glyphicon' style='margin: auto'>&nbsp;</i></button>
-          <p class='button-label'>Strict</p>
-        </div>
-        <div class='button-box'>
-        <div id="power" class="btn-default btn-circle button-display" style="border:0px solid;"><i class="glyphicon glyphicon-off" style="margin: auto">&nbsp;</i></div>
-          <p class='button-label'>Pwr</p>
-        </div>
-      </div>
-      
-      <div class="row">
-        <button class="quarter-circle bottom-left col-xs-6" id="bl"></button>
-        <button class="quarter-circle bottom-right col-xs-6" id="br"></button>
-        </div>
-      </div>
+    <div class="assaultTypes">
+      <button>Sexual</br>Assault</button>
+      <button>Drugged</button>
+      <button>Physical</br>Assault</button>
+      <button>Stalked</button>
     </div>
+    
+    <div class="nearBar">
+      <h2>Results</h2>
+      <ul id="places"></ul>
+      <button id="more">More results</button>
+    </div>
+
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD97mFaVfbUI2BHA1Chiyx-ExuYjRIipzU&libraries=places&callback=initMap" async defer></script>
   </body>
-
-

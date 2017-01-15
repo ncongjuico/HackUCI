@@ -6,7 +6,7 @@
 
       //Initiate the Map
       function initMap() {
-        var pyrmont = {lat: 34.0522, lng: -118.2437};
+        var pyrmont = {lat: 34.0872, lng: -118.3837};
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: pyrmont,
@@ -17,7 +17,7 @@
 
         service.nearbySearch({
           location: pyrmont,
-          radius: 5000,
+          radius: 50000,
           type: ['bar']
         }, processResults, callback);
       }
@@ -63,7 +63,11 @@
         }
       }
 
-      function createMarkers(places) {
+    function open_item(sender) {
+        sender.getElementsByTagName('div')[0].style.display = 'block';
+    }
+
+    function createMarkers(places) {
         var bounds = new google.maps.LatLngBounds();
         var placesList = document.getElementById('places');
 
@@ -83,14 +87,12 @@
             position: place.geometry.location
           });
 
-
           //showing as list on the sidebar  
           placesList.innerHTML += '<li>' + place.name + '</li>';
           bounds.extend(place.geometry.location);
-
-
         }
-        map.fitBounds(bounds);
+
+        // map.fitBounds(bounds);
 
         //listener to display infowindow when you click on marker
         google.maps.event.addListener(marker, 'click', function(){
