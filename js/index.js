@@ -7,7 +7,7 @@ function locationAlert(){
   {
       location.href ="findBar.html"; //change this
   }else{
-      location.href ="findBar.html"; //change this
+      location.href ="reportNo.html"; //change this
   }
 }
 
