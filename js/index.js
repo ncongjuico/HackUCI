@@ -5,7 +5,7 @@ document.getElementById("findBar").onclick = function(){
 function locationAlert(){
   if(confirm("We need to access your location.\nGrant us permission to access your location?") == true)
   {
-      location.href ="findBar.html"; //change this
+      location.href ="reportYes.html"; //change this
   }else{
       location.href ="reportNo.html"; //change this
   }

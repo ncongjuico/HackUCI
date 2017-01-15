@@ -43,7 +43,7 @@
         });
       }
 
-      //Process the result 
+      //Process the result
       function processResults(results, status, pagination) {
         if (status !== google.maps.places.PlacesServiceStatus.OK) {
           return;
@@ -84,7 +84,7 @@
           });
 
 
-          //showing as list on the sidebar  
+          //showing as list on the sidebar
           placesList.innerHTML += '<li>' + place.name + '</li>';
           bounds.extend(place.geometry.location);
 
