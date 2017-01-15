@@ -7,19 +7,20 @@
   </head>
 
   <body>
-    <div class="barTextFields">
-      Bar name: <input width="100px"></input></br>
-      Bar address(optional): <input width="100px"></input></br>
-    </div>
-    <div class="assaultTypes">
-      <button>Sexual</br>Assault</button>
-      <button>Drugged</button>
-      <button>Physical</br>Assault</button>
-      <button>Stalked</button>
-    </div>
+    <form name="reportNo">
+      <div class="barTextFields">
+        <p>Bar name: <input type="text" width="100px"></input></p>
+        <p>Bar address(optional): <input type="text" width="100px"></input></p>
 
-    <div class="barTextFields">
-        <p>Other notes:</p>
-        <textarea id="otherNotes"></textarea>
-    </div>
+        <div class="assaultTypes">
+          <button>Sexual</br>Assault</button>
+          <button>Drugged</button>
+          <button>Physical</br>Assault</button>
+          <button>Stalked</button>
+        </div>
+
+        <p>Other notes:</br><textarea id="otherNotes" width="200px" height="500px"></textarea></p>
+      </div>
+      <input type="submit"></input>
+    </form>
   </body>
