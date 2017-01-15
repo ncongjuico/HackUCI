@@ -18,7 +18,7 @@
         service.nearbySearch({
           location: pyrmont,
           radius: 50000,
-          type: ['bar']
+          type: ['bar'|'night_club']
         }, processResults, callback);
       }
 

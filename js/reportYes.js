@@ -18,14 +18,12 @@
 //   }, processResults, callback);
 // }
 
-// smear out function
-var fadeOut = function fadeOut(section) {
-    section.classList.remove('fadeIn');
-    section.classList.add('fadeOut');
-};
+var table = document.querySelector(".table")
+var buttons = document.querySelector(".assaultTypes")
 
-// smear in function
-var fadeIn = function fadeIn(section) {
-    section.classList.remove('fadeOut');
-    section.classList.add('fadeIn');
-};
+table.addEventListener('click', function(){
+    setTimeout(function(){
+        document.querySelector(".table").style.display = 'none';
+        enlargeVar.style.display = 'block';
+    }, 200);
+})
