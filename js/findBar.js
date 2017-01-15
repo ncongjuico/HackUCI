@@ -43,7 +43,7 @@
         });
       }
 
-      //Process the result 
+      //Process the result
       function processResults(results, status, pagination) {
         if (status !== google.maps.places.PlacesServiceStatus.OK) {
           return;
@@ -87,7 +87,12 @@
             position: place.geometry.location
           });
 
+<<<<<<< HEAD
           //showing as list on the sidebar  
+=======
+
+          //showing as list on the sidebar
+>>>>>>> e7a226f2b63d4f8c4e5a6b4c2a433e7904c4aa3f
           placesList.innerHTML += '<li>' + place.name + '</li>';
           bounds.extend(place.geometry.location);
         }
