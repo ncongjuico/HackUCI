@@ -1,3 +1,35 @@
+.assaultTypes{
+  display: none;
+}
+
+.barsNearYou{
+  text-align: center;
+}
+
+.barsNearYou table{
+  border-style: hidden;
+}
+
+th, td{
+  padding: 15px;
+  background-color: #E01822;
+  color: white;
+  width: 200px;
+}
+
+/*********************
+Utility for javascript
+*********************/
+.fadeOut {
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: all 300ms;
+}
+/*
 body {
   margin-top: 30px;
   background-color: grey;
@@ -136,3 +168,4 @@ p {font-size:0.7vw;}
 .grey {
   background-color:grey;
 }
+*/
