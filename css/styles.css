@@ -11,18 +11,31 @@ Mainpage STYLING
 ****************/
 .mainpage{
   text-align: center;
+  border-width: thin;
+  border-width: 100px;
+  border-color: black;
 }
 
 .mainpage img{
-  position: absolute;
-  top: 10%;
+  margin-top: 100px;
+  left: 50%;
+  right: 50%;
   height: 100px;
   width: 100px;
 }
 
 .mainpage button{
+  font-size: 16px;
+  color: white;
+  background-color: #E01822;
+  width: 120px;
+  height: 50px;
   position: relative;
-  left: 40px;
-  top: 150px;
+  top: 20px;
   margin-bottom: 20px;
+  border-radius: 30%;
+}
+
+.mainpage button:hover{
+  background-color: #dd4048;
 }
